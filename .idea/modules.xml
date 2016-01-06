@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/wms-test.iml" filepath="$PROJECT_DIR$/wms-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/decimal-test.iml" filepath="$PROJECT_DIR$/decimal-test.iml" />
     </modules>
   </component>
 </project>
