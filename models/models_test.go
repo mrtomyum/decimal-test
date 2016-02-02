@@ -42,11 +42,11 @@ func setup() ([]*Category, []*Item, []*Location, []*Stock, []*Trans){
 	l[14] = &Location{Parent: l[8], LocType: COLUMN, Code:"05"}
 
 	s := make([]*Stock,5)
-	s[0] = &Stock{item: i[1], loc: l[1], bal: 10}
-	s[1] = &Stock{item: i[1], loc: l[2], bal: 10}
-	s[2] = &Stock{item: i[1], loc: l[3], bal: 10}
-	s[3] = &Stock{item: i[2], loc: l[1], bal: 10}
-	s[4] = &Stock{item: i[2], loc: l[2], bal: 10}
+	s[0] = &Stock{item: i[1], loc: l[1], bal: 0}
+	s[1] = &Stock{item: i[1], loc: l[2], bal: 0}
+	s[2] = &Stock{item: i[1], loc: l[3], bal: 0}
+	s[3] = &Stock{item: i[2], loc: l[1], bal: 0}
+	s[4] = &Stock{item: i[2], loc: l[2], bal: 0}
 
 	t := make([]*Trans, 10)
 	t[0] = &Trans{ ID: 1, item: i[1], locOut: l[0], locIn: l[1], qty: 100}

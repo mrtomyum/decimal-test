@@ -33,11 +33,12 @@ func (i *Item) Calc(st []*Stock, tx []*Trans)  {
 			for _, s := range st {
 				if s.item == i && s.loc == t.locIn {
 					s.bal += t.qty
+					fmt.Printf("Item %v Loc: %v qty: %v bal: %v\n", s.item.Name, s.loc.Code, t.qty, s.bal)
 				}
 				if s.item == i && s.loc == t.locOut {
 					s.bal -= t.qty
+					fmt.Printf("Item %v Loc: %v qty:-%v bal: %v\n", s.item.Name, s.loc.Code, t.qty, s.bal)
 				}
-				fmt.Printf("Item %v Loc: %v qty: %v bal: %v\n", s.item.Name, s.loc.Code, t.qty, s.bal)
 			}
 		}
 	}
